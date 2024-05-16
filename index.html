@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aladin&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <title>SignUp Page</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            justify-content: center;
+            font-family: "Poppins", sans-serif;
+            font-style: normal;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: #E9F8E5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .left-half {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            justify-content: center;
+        }
+
+        .left-half img {
+            width: 60%;
+        }
+
+        .right-half {
+            padding: 2.5rem 4.5rem;
+            background-color: rgb(252, 254, 255);
+            width: 50%;
+            border-radius: 1rem 0 0 1rem;
+            height: 100%;
+        }
+
+        .right-half logo {
+            display: flex;
+            align-items: center;
+            justify-content: baseline;
+        }
+
+        .right-half h3 {
+            text-align: center;
+        }
+
+        .right-half logo label {
+            font-size: 1.5rem;
+            font-family: "Aladin", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .right-half logo img {
+            width: 1.5rem;
+        }
+
+        .right-half h3 {
+            font-size: 1.3rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            text-align: center;
+            margin-block: 1rem;
+        }
+
+        .right-half form {
+            /* border: 2px solid#428031; */
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            /* gap: 3px; */
+        }
+
+        .right-half form label {
+            font-size: .8rem;
+            /* margin-bottom: .3rem; */
+        }
+
+        .right-half form .input-with-icon {
+            position: relative;
+            /* padding-left: 30px; */
+        }
+
+        .right-half form .input-with-icon input,
+        button {
+            /* padding-left: 30px; */
+            padding: 8px 0 8px 45px;
+            margin-bottom: .7rem;
+            width: 100%;
+            border-radius: .8rem;
+            border-color: rgba(0, 0, 0, 0.219);
+        }
+
+        .right-half form .input-with-icon .icon {
+            position: absolute;
+            left: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+            padding-left: 15px;
+
+        }
+
+        .right-half form .input-with-icon .icon img {
+            padding-bottom: .2rem;
+        }
+
+        .right-half form button {
+            background-color: #428031;
+            margin-top: 1.4rem;
+            color: white;
+            font-weight: 600;
+            padding: 8px 0px;
+        }
+
+        .right-half .or {
+            text-align: center;
+        }
+
+        .right-half .links {
+            display: flex;
+        }
+
+        .right-half .links a {
+            padding: 10px;
+        }
+
+        .right-half .links a img {
+            padding: 2px;
+            border-radius: 50%;
+            background-color: transparent;
+            border: 2px solid rgba(0, 0, 0, 0.274);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .right-half .have-account {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        @media (max-width: 992px) {
+            .left-half img {
+                width: 70%;
+            }
+
+            .right-half {
+                padding: 2rem 3rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .left-half img {
+                width: 80%;
+            }
+
+            .right-half {
+                padding: 2rem .5rem;
+            }
+        }
+
+        @media (max-width: 476px) {
+            .container {
+                background-color: #ffffff;
+                display: block;
+            }
+
+            .left-half img {
+                position: absolute;
+                top: 40px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .left-half {
+
+                width: 100%;
+                height: 250px;
+            }
+
+            .right-half logo {
+                position: absolute;
+                top: 15px;
+                left: 40%;
+                text-align: center;
+
+            }
+
+            .left-half img {
+
+                width: 200px;
+            }
+
+            .right-half {
+                padding: 0rem 0rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .right-half form .input-with-icon input,
+            button {
+                border-radius: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left-half">
+            <img src="./assests/Autumn-amico 1.png"
+                alt="a-girl-walking-with-umbrella-under-the-shade-of-trees-near-a-bench">
+        </div>
+        <div class="right-half">
+            <!-- logo  -->
+            <logo>
+                <img src="./assests/Vector.png" alt="Logo-icon-consist-of-four-leaves" id="logo"><label>Leaf</label>
+            </logo>
+            <!-- heading -->
+            <h3>Create Account</h3>
+            <!-- form section -->
+            <form action="index.php" method="post">
+                <label for="name">Full Name</label>
+                <div class="input-with-icon">
+                    <i class="icon "><img src="./assests/user.png" width="17"
+                            alt="user-icon-inside-input-field-of-name"></i>
+                    <input type="text" name="name" id="name" placeholder="Enter Full Name">
+                </div>
+                <label for="email">Email</label>
+                <div class="input-with-icon ">
+                    <i class=" icon"><img src="./assests/mail-02.png" width="17"
+                            alt="email-icon-inside-input-field-of-email"></i>
+                    <input type="email" name="email" id="email" placeholder="Enter Your Email">
+                </div>
+                <label for="password">Password</label>
+                <div class="input-with-icon">
+                    <i class=" icon "><img src="./assests/lock.png" width="17"
+                            alt="lock-icon-inside-input-field-of-password"></i>
+                    <input type="password" name="password" id="password" placeholder="Enter Your Password">
+                </div>
+                <button type="submit">Sign-Up</button>
+            </form>
+            <!-- other ways to SignUp -->
+            <p class="or">-OR-</p>
+            <div class="links">
+                <a href="https://www.google.com/" target="_blank"><img src="./assests/search.png"
+                        alt="google-icon-for-signup-with-google" width="25"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="./assests/facebook.png"
+                        alt="facebook-icon-for-signup-with-facebook" width="25"></a>
+                <a href="https://www.apple.com/" target="_blank"><img src="./assests/apple.png"
+                        alt="apple-icon-for-signup-with-apple" width="25"></a>
+            </div>
+            <!--Already have an account  -->
+            <p class="have-account">Already have an account? &nbsp; <a href=""><strong>Login</strong></a></p>
+        </div>
+    </div>
+</body>
+
+</html>
